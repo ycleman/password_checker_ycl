@@ -4,7 +4,7 @@ def check_password_strength(password):
     score = 0
     suggestions = []
 
-    # Check password length
+    # Firstly Check password length
     if len(password) >= 8:
         score += 1
     else:
@@ -44,7 +44,7 @@ def check_password_strength(password):
 
     return strength, suggestions
 
-# Main program
+# Main code block
 if __name__ == "__main__":
     # Get password input from the user
     pwd = input("Enter password: ")
@@ -58,3 +58,4 @@ if __name__ == "__main__":
         print("Suggestions to improve your password:")
         for s in suggestions:
             print(" -", s)
+
